@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATHOU</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="transparent-nav">
+            <h1>MATHOU</h1>
+        </nav>
+        <h2>Amusez-vous avec les maths !</h2>
+
+        <div>
+            <p><strong>MATHOU</strong> est une application ludique qui vous permet de jouer tout en pratiquant les
+                opérations de
+                multiplication, d'addition et de soustraction.</p>
+        </div>
+    </header>
+
+
+    <main>
+        <h3>Multiplication, addition ou soustraction ? <br> À vous de choisir </h3>
+
+        <div class="choixOperation">
+            <strong>Choisissez votre option :</strong>
+            <div class="optionOperation">
+                <input type="radio" name="optionOperation" id="addition" value="1" checked>
+                <label for="addition">Addition</label>
+                <input type="radio" name="optionOperation" id="soustraction" value="2">
+                <label for="soustraction">Soustraction</label>
+                <input type="radio" name="optionOperation" id="multiplication" value="3">
+                <label for="multiplication">Multiplication</label>
+            </div>
+        </div>
+
+
+        <div class="affichageSaisie">
+
+            <div class="affichageOperation">
+                <span>X + Y = </span>
+            </div>
+
+            <div class="saisieOperation">
+                <input type="text" id="resultatOperation" name="resultatOperation">
+                <button id="btnResultatOperation">Valider</button>
+            </div>
+        </div>
+
+
+        <div class="scoreOperation">
+            <strong>Votre score : <span>0</span></strong>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="center-content">
+            <strong>Copyright © 2023 Nouri</strong>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
